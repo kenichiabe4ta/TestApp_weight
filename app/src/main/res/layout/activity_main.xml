@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jp.techacademy.kenichi.abe.testapp.MainActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="レイアウト確認用"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:layout_height="wrap_content"
+        android:text="---------------Hello World!------------"
+        android:id="@+id/textview1" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textview2" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:text="weight"
+        android:id="@+id/bt1"
+        android:onClick="weight" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
